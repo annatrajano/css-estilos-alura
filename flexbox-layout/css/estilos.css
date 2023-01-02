@@ -101,12 +101,6 @@ body {
   padding: 13px 30px 13px 13px;
 }
 
-@media (min-width: 834px) {
-  .cabecalho__pesquisar__item {
-    display: block;
-  }
-}
-
 /* MENU LATERAL */
 
 .menu__container {
@@ -202,6 +196,12 @@ body {
   color: white;
   font-size: 16px;
   background-color: var(--azul-claro);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  white-space: nowrap;
+  overflow: scroll;
+  overflow-y: hidden;
   padding: 0 20px;
   position: fixed;
   top: 80px;
@@ -257,6 +257,10 @@ body {
   line-height: 1.5;
   font-size: 16px;
   background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+/*   flex-direction: column;
+  flex-wrap: wrap; */
 }
 
 .rodape__titulo {
@@ -270,7 +274,11 @@ body {
     height: 100vh;
   }
 
-  /* ESTILOS DO MENU LATERAL */
+  /* ESTILOS DO CABEÇALHO */
+
+  .cabecalho__pesquisar__item {
+    display: block;
+  }
 
   .menu__container {
     font-size: 16px;
@@ -309,6 +317,7 @@ body {
   .rodape__container {
     height: 420px;
     padding-left: 74px;
+    justify-content: space-between;
   }
 }
 
