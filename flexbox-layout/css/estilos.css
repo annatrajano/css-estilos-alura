@@ -255,6 +255,16 @@ body {
 .videos__container {
   color: black;
   padding: 153px 20px 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px
+  
+}
+
+.videos__item {
+  height: 303px;
+  width: 280px;
+  flex-grow: 1;
 }
 
 .videos__item:hover {
@@ -335,12 +345,25 @@ body {
   /*ESTILOS SEÇÃO VÍDEOS */
 
   .videos__container {
-    padding-left: 90px;
-    padding-right: 17px;
+    color: black;
+    padding: 153px 20px 10px 20px;
   }
 
   .videos__item:hover {
     transform: scale(1.3);
+    background-color: var(--azul-claro);
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .descricao-video h3 {
+    font-weight: 700;
+    color: #444444;
+  }
+
+  .descricao-video p {
+    font-size: 14px;
+    color: #444444;
   }
 
   /* ESTILOS RODAPÉ */
